@@ -1,0 +1,28 @@
+body {
+	background-color: #eee;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 2rem ;
+	text-align: center;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+div#ui1-main {
+	margin: 10vh 10vw;
+	padding: 50px;
+	background-color: #fff;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Chestut Start</title>
+	</head>
+	<body style="background-image: url(https://bing.img.run/1920x1080.php);">
+		<div style="height: 30vh;"></div>
+		<input type="text" id="a" style="height: 10vh;width: 50vw;"/>
+		<input type="button" value="Search" onclick="search()"  style="height: 10vh;width: 10vw;"/>
+		<p style="background-color: blue;color: white;font-size: 5vh;">本页面还在编程，暂无无法提供服务。This page is still being
+			programmed, and there is no service available at this time.</p>
+		<script>
+			function search() {
+				var oSearchText = document.getElementById("a").value;
+				window.open("https://cn.bing.com/search?q=" + oSearchText);
+			}
+		</script>
+	</body>
+</html>
