@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CPS | Tool - Markdown 在线编辑&预览</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+		<script src="../../js/public.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../plugin/markdown/skin-githubcss.css" />
+		<script src="../../plugin/markdown/parse.js"></script>
+		<link rel="stylesheet" href="../../plugin/highligt/skin-highlight.css">
+		<script src="../../plugin/highligt/highlight.js"></script>
+
+		<style>
+			html,
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="float: left; width:48vw; height:100%; background: #eee;padding: 1vw;">
+			<textarea id="in" style="width: 45vw;height: 90vh;"></textarea>
+			<br />
+			自动更新间隔:<input id="bt" type="number" value="500" />ms
+		</div>
+		<div style="border-left:50vw solid #eee;  height:100%;   background: #eee;">
+			<div id="content" class="markdown-body" style="padding: 1vw;"></div>
+		</div>
+
+		<script>
+			var t;
+			function upd() {
+				t=document.getElementById('bt').value;
+				document.getElementById('content').innerHTML =
+					window.markdownit().render(document.getElementById('in').value);
+				hljs.highlightAll();
+				setTimeout(upd,t);
+			}
+			upd();
+		</script>
+	</body>
+</html>
