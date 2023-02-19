@@ -1,3 +1,5 @@
-html {
+* {
 	font-family: "Product Sans", "HarmonyOS San SC", "Microsoft YaHei UI";
+	padding: 0px;
+	margin: 0px;
 }
