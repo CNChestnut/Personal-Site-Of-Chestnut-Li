@@ -1,0 +1,51 @@
+body {
+	background-color: #000;
+}
+
+nav {
+	background-color: #000;
+	/* 导航栏背景颜色 */
+	color: #fff;
+	/* 导航栏文字颜色 */
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* 去掉列表项的圆点符号 */
+	overflow: hidden;
+	/* 隐藏溢出的列表项 */
+}
+
+nav li {
+	float: left;
+	/* 列表项左浮动 */
+}
+
+nav a {
+	display: block;
+	/* 将链接转换为块级元素 */
+	padding: 12px;
+	/* 链接内边距 */
+	color: #fff;
+	/* 链接文字颜色 */
+	text-decoration: none;
+	/* 去掉链接下划线 */
+}
+
+nav a:hover {
+	background-color: #fff;
+	/* 鼠标悬停时链接背景颜色 */
+	color: #000;
+}
+
+#titlediv {
+	padding: 37.5vh 0;
+}
+
+#titlediv-title {
+	height: 20vh;
+	color: #fff;
+	text-align: center;
+}

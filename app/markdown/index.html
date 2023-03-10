@@ -4,12 +4,11 @@
 		<meta charset="utf-8" />
 		<title>CPS | Tool - Markdown 在线编辑&预览</title>
 		<link rel="stylesheet" type="text/css" href="../../css/public.css" />
-		<script src="../../js/public.js"></script>
-		<link rel="stylesheet" type="text/css" href="../../plugin/markdown/skin-githubcss.css" />
-		<script src="../../plugin/markdown/parse.js"></script>
-		<link rel="stylesheet" href="../../plugin/highligt/skin-highlight.css">
-		<script src="../../plugin/highligt/highlight.js"></script>
-
+		<link rel="stylesheet" type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css" />
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js'></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 		<style>
 			html,
 			body {
@@ -30,12 +29,13 @@
 
 		<script>
 			var t;
+
 			function upd() {
-				t=document.getElementById('bt').value;
+				t = document.getElementById('bt').value;
 				document.getElementById('content').innerHTML =
 					window.markdownit().render(document.getElementById('in').value);
 				hljs.highlightAll();
-				setTimeout(upd,t);
+				setTimeout(upd, t);
 			}
 			upd();
 		</script>
