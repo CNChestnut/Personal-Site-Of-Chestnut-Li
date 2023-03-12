@@ -1,0 +1,35 @@
+header.in-body{
+    background-image: url("http://bing.getlove.cn/bingImage");
+    background-size: 100vw;
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke: 0.1vw #000;
+}
+
+header.in-body h1{
+    padding-top: 3vw;
+    font-size: 5vw;
+}
+
+header.in-body h2{
+    padding-top:3vw;
+    font-size: 3vw;
+    padding-bottom: 3vw;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+main ul li{
+    margin: 2vmin;
+    padding: 2vh 2vmin;
+    border-radius: 2vmin;
+    background-color: pink;
+    text-align: center;
+}
+
+main ul li a{
+    color: #fff;
+    font-size: 3vh;
+}

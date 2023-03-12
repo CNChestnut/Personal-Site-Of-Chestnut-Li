@@ -1,12 +1,8 @@
-body {
-	background-color: #000;
-}
-
 nav {
-	background-color: #000;
 	/* 导航栏背景颜色 */
 	color: #fff;
 	/* 导航栏文字颜色 */
+	font-size: 2vh;
 }
 
 nav ul {
@@ -26,7 +22,7 @@ nav li {
 nav a {
 	display: block;
 	/* 将链接转换为块级元素 */
-	padding: 12px;
+	padding: 1.5vh;
 	/* 链接内边距 */
 	color: #fff;
 	/* 链接文字颜色 */
@@ -40,12 +36,22 @@ nav a:hover {
 	color: #000;
 }
 
-#titlediv {
-	padding: 37.5vh 0;
+header {
+	background-color: #000;
+	height: 100vh;
 }
 
-#titlediv-title {
-	height: 20vh;
+#titlediv {
 	color: #fff;
 	text-align: center;
+	padding: 42.5vh 0;
+	height: 10vh;
+}
+
+#more-info {
+	display: inline-block;
+	padding: 0.5vh;
+	border-radius: 1vh;
+	background-color: #fff;
+	color: #000;
 }

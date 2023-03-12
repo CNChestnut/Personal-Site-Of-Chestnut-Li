@@ -1,50 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>CPS | Tool - User Agent 工具(ua测试,UA例子)</title>
-		<link rel="stylesheet" type="text/css" href="../../css/public.css" />
-		<link rel="stylesheet" type="text/css" href="../../css/ui1.css" />
-		<script src="../../js/public.js"></script>
-		<style>
-			.ua-example {
-				margin: 1em 0em;
-				padding: 1em;
-				border-radius: 3em;
-				text-align: center;
-				background-color: skyblue;
-				font-size: 1.ex;
-			}
-		</style>
-		<script src="ua-c.js"></script>
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>CPS | Tool - User Agent 工具(ua测试,UA例子)</title>
+    <link rel="stylesheet" type="text/css" href="../../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    </style>
+    <script src="ua.js"></script>
+  </head>
+  <body>
+    <div style="padding-top: 10vh;">
+        <h1>User Agent 工具</h2>
 		<div>
-			<p class="back-to">
-				<a class="back-to" href="../../index.html">主站</a>/
-				<a class="back-to" href="../index.html">Apps</a>
-			</p>
+			<h2>以下是你的 User Agent</h2>
+			<p id="user-ua" class="text-ua"></p>
 		</div>
-		<div id="ui1-main">
-			<div style="height: 10vh;"></div>
-			<div>
-				<h2>你的 User Agent 为</h2>
-				<h3 id="text-ua-main" class="text-ua"></h3>
-			</div>
-			<hr />
-			<h3>UA例子</h3>
-			<div class='ua-example text-ua'>
-				Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0
-				Safari/537.36 Edg/109.0.1518.55
-			</div>
-			<div class='ua-example text-ua'>
-				Mozilla/5.0 (Linux; Android 10; DVC-AN20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile
-				Safari/537.36 EdgA/108.0.1462.54
-			</div>
-			<div class='ua-example text-ua'>
-				Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)
-				Mobile/15E148 MicroMessenger/8.0.17(0x18001122) NetType/4G Language/zh_CN
-			</div>
-		</div>
-	</body>
+      <hr />
+    </div>
+  </body>
 </html>
